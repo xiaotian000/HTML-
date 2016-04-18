@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="charset=utf-8"/>
+    </head>
+    <body>
+        <p>请点击图片上的气泡鱼，把它放大。</p>
+        <img src="bubble fish.jpg" width="915" height="615"
+        border="0" usemap="#bubblemap"
+        alt="Bubbles"/>
+        
+        <map name="bubblemap" id="bubblemap">
+            <area
+            shape="rect"
+            coords="442,295,669,436"
+            href="./fish.png"
+            target="_blank"
+            alt="Fish"/> 
+        </map>
+        <p><b>注释：</b>img元素中的“usemap”属性引用map元素中的“id”或“name”属性（根据浏览器），
+        所以我们同时向map元素添加了“id”和“name”属性。</p>
+        
+    </body>
+</html>
