@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="charset=utf-8">
+    </head>
+    <body>
+        <form>
+            姓名：
+            <input type="text" name="firstname">
+            <br/>
+            <br/>
+            年龄：
+            <input type="text" name="eage">
+        </form>
+    </body>
+</html>
