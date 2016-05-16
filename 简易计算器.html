@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="charset=utf-8">
+        <script type="text/javascript">
+        function resCale()
+        {
+            numA=document.getElementByID("num_a").value;
+            numB=document.getElementByID("num_b").value;
+            document.getElementByID("result").value=Number(numA)+Number(numB);    
+        }
+        </script>
+    </head>
+    <body>
+      <p>使用output元素的简易计算器：</p>
+      <form onsubmit="return false">
+          <input id="num_a"/>+
+          <input id="num_b"/>=
+          <output id="resule" onformchange="resCalc()"></output>
+      </form>  
+    </body>
+</html>
