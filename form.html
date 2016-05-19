@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="charset=utf-8">
+    </head>
+    <body>
+        <form action="/example/html5/demo_form.asp" method="GET"
+        id="user_form">
+           First name:<input type="text" name="fname"/>
+           <input type="submit" /> 
+        </form>
+        <p>下面输入域在form元素之外，但仍然是表单的一部分。</p>
+        Last name:<input type="text" name="lname" form="user_form"/>
+    </body>
+</html>
