@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" Content="charset=url-8"/>
+        <title>欢迎大家来到Head First Longue</title>
+    </head>
+    <body>
+        <h1>Welcome to the Head First Longue</h1>
+        <img src="baby and dog.jpg">
+        <p>
+            Join us any everying for refreshing elixirs,conversation and maybe a game or 
+            two of <em>Dance Dance Revolution</em>.
+            Wrieless access is always provided;
+            BYOWS(Bring your own Web server). 
+        </p>
+        <h2>Directions</h2>
+    <p>You'll find us right in the center of downtown Webville.Come join us!</p>
+    </body>
+</html>
