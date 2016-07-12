@@ -36,6 +36,7 @@ p.blueberry{
     text-align: center;
     background-image: url(images/background.jpg);
     background-repeat: no-repeat;
+    float: right;
 }
 #elixirs a:link{
     color: #007e7e;
