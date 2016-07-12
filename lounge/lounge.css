@@ -1,14 +1,19 @@
-body{
-    font-family: sans-serif;
+
+#elixirs h1,h2{
+    font-size: x-larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+#elixirs h2{
+    color: orangered;
+}
+#elixirs{
+    line-height: 1.5gtem;
 }
 p{
-    color: maroon;
-}
-h1,h2{
-    color: gray;
-}
-h1{
-    border-bottom: 1px solid black;
+    font-size: 1.2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
 }
 p.greentea{
     color: green;
@@ -18,4 +23,27 @@ p.raspberry{
 }
 p.blueberry{
     color: blue;
+}
+#elixirs{
+    border-style: dashed;
+    border-width: thin;
+    border-color: #007e7e;
+    padding-left: 220px;
+    padding-right: 220px;
+    padding-bottom: 220px;
+    margin-left: 320px;
+    margin-right: 320px;
+    text-align: center;
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+}
+#elixirs a:link{
+    color: #007e7e;
+}
+#elixirs a:visited{
+    color: #333333;
+}
+#elixirs a:link{
+    background: #f88396;
+    color: #0d5353;
 }

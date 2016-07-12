@@ -12,14 +12,13 @@ h1{
 h2{
     font-size: 130%;
 }
-.guarantee{
+#guarantee{
     line-height: 1.9em;
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #444444;
     border-color:black;
-    border-weight:1px;
-    border-style:solid;
+    border-width: 1px;
     border-style: dashed;
     border-color: white;
     background-color: #a7cece;
@@ -30,4 +29,19 @@ h2{
     background-image: url(images/start.png);
     background-repeat: no-repeat;
     background-position: top left;
+}
+.cd{
+    font-style: italic;
+}
+.artist{
+    font-weight: bold;
+}
+a:link{
+    color: lightgreen;
+}
+a:visited{
+    color: red;
+}
+a:hover{
+    color: yellow;
 }
