@@ -45,6 +45,12 @@ h1{
     font-size: 120%;
     color: black;
 }
+a.link{
+    color: palevioletred;
+}
+a.visited{
+    color: darkcyan;
+}
 #allcontent{
     margin: 0 auto;
     width: 1100px;
