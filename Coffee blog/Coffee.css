@@ -1,0 +1,45 @@
+body{
+    background-color: papayawhip;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+}
+header{
+    padding: 0px;
+    margin: 0px 10px 10px 10px;
+}
+section#main{
+    background-color: burlywood;
+    font-size: 120%;
+    padding: 15px;
+    margin: 10px 10px 10px 10px;
+    width: 190px;
+    float: left;
+}
+section#blog{
+    background-color: burlywood;
+    font-size: 110%;
+    padding: 15px;
+    margin: 10px 420px 10px 250px;
+    width: 620px;
+}
+aside{
+    background-color: burlywood;
+    font-size: 120%;
+    padding: 15px;
+    margin: 10px 10px 10px 920px ;
+    float: right;
+}
+footer{
+    background-color: slategrey;
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    clear: right;
+}
+#allcontent{
+    width: 1380px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
