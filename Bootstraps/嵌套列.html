@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Using the Bootstrap Grid classes</title>
+        <meta http-equiv="Content" content="charset=utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!--Bootstrap-->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <style>
+            #packt{
+                border-style: solid;
+                border-color: black;
+                color: #FF00FF;
+            }
+            #pub{
+                border-style: solid;
+                border-color: black;
+                color: #FF00FF;
+            }
+            #packtlib{
+                border-style: dotted;
+                border-color: lime;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Hello World!</h1>
+            <p>
+                This is an example to show how to nest columns within the allocated
+                parent space
+            </p>
+            <div class="row">
+                <div id="packtlib">
+                    <h2>
+                        Columns can be nested within the space.
+                    </h2>
+                    <div class="row">
+                        <div class="col-md-6 " id="packt">
+                            <p>
+                                Packt is one of the most prolific and fast-growing tech 
+                                book publishers in the world.Originally focused on open 
+                                source software,Packt pays a royalty on relevant books 
+                                directly to open source projects.These projects have 
+                                received over $400,000 as part of Packt's Open Source
+                                Royalty Scheme to date.
+                            </p>
+                        </div>
+                        <div class="col-md-6 " id="pub">
+                            <p>
+                                Packt is one of the most prolific and fast-growing tech 
+                                book publishers in the world.Originally focused on open 
+                                source software,Packt pays a royalty on relevant books 
+                                directly to open source projects.These projects have 
+                                received over $400,000 as part of Packt's Open Source
+                                Royalty Scheme to date.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
