@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dropdowns in Bootstrap</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+        <script src="http://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <style>
+            #packt{
+                padding: 50px 50px 50px 100px;
+            }
+        </style>
+    </head>
+    <body id="packt">
+        <div>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-home">
+                    Packt Home Page</span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-user">Authors</span></a></li>
+                    <li class="dropdowns">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            Blogs<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="https://www.packtpub.com/books/content/blogs">
+                                    <span class="glyphicon glyphicon-book"></span>Blog
+                                    </a>
+                                </li>
+                                <li><a href="https://www.packtpub.com/books/content/tech-pub">
+                                <span class="glyphicon glyphicon-bookmark"></span>Tech Pub</a></li>
+                                <li><a href="https://www.packtpub.com/books/content/article-network">
+                                <span class="glyphicon glyphicon-book">Article Network</span></a></li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="https://www.packtpub.com/books/content/support">Support</a>
+                                </li>
+                            </ul>
+                    </li>
+            </ul>
+        </div>
+    </body>
+</html>
