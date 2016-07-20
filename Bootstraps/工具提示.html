@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap ToolTips with Placement using JavaScript</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+        <script src="http://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $(".packtpub1").tooltip({
+                placement:'left'
+            });
+            $(".packtpub2").tooltip({
+                placement:'top'
+            });
+            $(".packtpub3").tooltip({
+                placement:'right'
+            });
+            $(".packtpub4").tooltip({
+                placement:'bottom'
+            });
+        })
+        </script>
+        <style>
+            #packt{
+                padding: 50px 50px 50px 100px;
+            }
+        </style>
+    </head>
+    <body id="packt">
+        <div>
+            <button type="button" class="btn btn-primary packtpub1" data-toggle="tooltip"
+            title="Left Tooltip">Hey Joe</button>
+            <hr><br><br>
+            <button type="button" class="btn btn-primary packtpub2" data-toggle="tooltip"
+            title="Top Tooltip">Hey Joe</button>
+            <hr><br><br>
+            <button type="button" class="btn btn-primary packtpub3" data-toggle="tooltip"
+            title="Right Tooltip">Hey Joe</button>
+            <hr><br><br>
+            <button type="button" class="btn btn-priamry packtpub4" data-tooltip="tooltip"
+            title="Bottom Tooltip">Hey Joe</button>
+        </div>
+    </body>
+</html>
