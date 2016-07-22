@@ -16,3 +16,6 @@ div{
 .guess_box{
     height: 200px;
 }
+.my_hover{
+    border: solid #00f 3px;
+}
