@@ -13,8 +13,7 @@
     font-size: 1.2em;
 }
 .logo{
-    background-image: url("list logo.jpg");
-    background-repeat: no-repeat;
+    line-height: 28px;
     }
 .title{
     color: lightslategray;
@@ -34,4 +33,10 @@
 }
 .carousel{
     margin-top: 20px;
+}
+#fooder{
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    font-size: 0.9em;
 }
