@@ -12,6 +12,10 @@
     padding: 10px;
     font-size: 1.2em;
 }
+.logo{
+    background-image: url("list logo.jpg");
+    background-repeat: no-repeat;
+    }
 .title{
     color: lightslategray;
 }
@@ -21,4 +25,13 @@
 }
 .music-tab{
     padding: 20px;
+}
+.item{
+    background: #333;
+    text-align: center;
+    height: 300px !important;
+
+}
+.carousel{
+    margin-top: 20px;
 }
