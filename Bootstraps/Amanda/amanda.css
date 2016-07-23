@@ -1,0 +1,24 @@
+
+.navbar-header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 60px;
+}
+.row{
+    padding: 15px;
+}
+.col-sm-3{
+    background-color: ghostwhite;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+}
+.title{
+    color: lightslategray;
+}
+.col-sm-9{
+    padding: 10px;
+    font-size: 1.1em;
+}
+.music-tab{
+    padding: 20px;
+}
