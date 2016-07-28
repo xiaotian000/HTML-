@@ -1,0 +1,68 @@
+
+body{
+    padding-left: 430px;
+}
+.left { 
+    position: fixed; 
+    height: 100%; 
+    width: 400px; 
+    top: 0; 
+    left: 0; 
+    background-image: url("星空背景.jpg");
+    }
+.left-about{
+    padding: 10px 20px 10px 20px;
+    margin: 10px 20px 10px 20px;
+}
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+    color: white;
+}
+.lead{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    color: gray;
+}
+.left-main{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px 10px 20px;
+    margin: 10px 20px 10px 20px;
+    line-height: 3.0em;
+}
+.footer{
+    font-size: 1.2em;
+    color: gray;
+}
+.right{
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    width: 100%;
+}
+.post-title{
+    padding: 30px 20px 20px 20px;
+    margin: 20px 20px 5px 20px;
+    color: black;
+}
+.post-data{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+    padding: 15px 20px 20px 20px;
+    margin: 5px 20px 0px 20px;
+    color: gray;
+}
+.post-content{
+    font-size: 1.4em;
+    padding: 20px 20px 20px 20px;
+    margin: 10px 20px 0px 20px;
+}
+.box{
+    padding: 10px 20px 20px 20px;
+    margin: 5px 80px 0px 20px;
+}
+.list{
+    padding: 10px 20px 20px 20px;
+    margin: 5px 20px 0px 20px;
+    font-size: 1.4em;
+}
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>mrkris</title>
+        <meta http-equiv="Content-Type" content="charset=utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+        <link type="text/css" rel="stylesheet" href="Kristoph blog.css">
+        <link href="Highlight/highlight.css" rel="stylesheet" media="screen"> 
+        <script src="http://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="Highlight/highlight.js"></script>
+    </head>
+    <body>
+        <div>
+             <div class="left">
+                    <div class="left-about">
+                        <h1>
+                            <img src="头像.png"><a href="/"> Kristoph</a>
+                        </h1>
+                        <p class="lead">Development tricks with an emphasis on Ruby</p>
+                        <div class="left-main">
+                            <nav class="nav-navbar">
+                                <a class="nav-navbar-item active" href="/">Home</a><br>
+                                <a class="nav-navbar-item" href="/">About</a><br>
+                                <a class="nav-navbar-item" href="http://github.com/xiaotian000">GitHub</a>
+                            </nav>
+                        </div>
+                         <p class="footer">&2016.All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right-content">
+                        <div class="posts">
+                            <div class="post">
+                                <h1 class="post-title"><strong>Service objects in Ruby and Rails</strong></h1>
+                                <span class="post-data">07 July 2016 in Ruby and Rails</span>
+                                <p class="post-content">
+                                    A common design pattern for performing tasks after an object is created is
+                                     to use an ActiveModel Callback. For example:
+                                </p>
+                                <div class="box">
+                                <pre><code>class User < ActiveRecord::Base
+  after_create :send_welcome_email
+  
+  def send_welcome_email
+    # Send an email
+  end
+end
+                                    </code></pre>
+                                    <script>Highlight();</script> 
+                                </div>
+                                <div class="list">
+                                    <p>Yes, this is simplistic, but there are a few problems with this.</p>
+                                <ol>
+                                    <li>It's not the User models responsibility to send an email.</li>
+                                    <li>Unless it modifies internal state, callbacks should be avoided.</li>
+                                    <li>Testing becomes painful and often times requires stubbing.</li>
+                                </ol>
+                                <p>
+                                    Lets talk about responsibility for a moment. In my opinion, if it's an interaction, it shouldn't belong to one specific model. What if you need a <em>send_invoice_email</em> to go with <em>send_welcome_email</em>? This can quickly get out of hand. This is why I use service objects.
+
+<br><br>So what exactly is a service object? It's really just an object that encapsulates operations. Using our initial callback example, lets refactor it to use a service object by adding the following to<em> app/services/send_welcome_email.rb</em>
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </body>
+</html>
