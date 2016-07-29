@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $("button#vegOn").click(function(){
+        $(".menu_list").children().detach();
+    });
+    $("button#restoreMe").click(function(){
+        if(v==true){
+            v=false;
+        }
+    });
+});
