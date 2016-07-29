@@ -64,6 +64,24 @@ end
 <br><br>So what exactly is a service object? It's really just an object that encapsulates operations. Using our initial callback example, lets refactor it to use a service object by adding the following to<em> app/services/send_welcome_email.rb</em>
                                 </p>
                                 </div>
+                                <div class="box">
+                                <pre><code>class SendWelcomeEmail
+  def self.call(user)
+    UserMailer.welcome_email(user).deliver
+  end
+end</code></pre>
+<script>Highlight();</script>
+                                </div>
+                                <div class="list">
+                                <p>Now to send a welcome email, you would do:</p>
+                                </div>
+                                <div class="box">
+                                    <pre><code>SendWelcomeEmail.call(user)</code></pre>
+                                    <script>Highlight();</script>
+                                </div>
+                                <div class="list">
+                                    <p>This makes it far easier to test and decouples the responsibility.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
