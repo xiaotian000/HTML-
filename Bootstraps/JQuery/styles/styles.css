@@ -1,0 +1,20 @@
+.topper{
+    width: 96%;
+}
+.menu_wrapper{
+    width: 96%;
+}
+.nav{
+    float: right;
+    list-style: none;
+    text-align: right;
+}
+.menu_entrees li{
+    list-style-type: none;
+}
+.menu_list li{
+    list-style-type: none;
+}
+.veg_leaf{
+    list-style-image: url('../images/叶子.jpg');
+}
