@@ -46,10 +46,10 @@ p{
 	overflow: hidden;
 }
 
-#pic_box{
-	position:relative; 
+#pic-box{
+	position:relative;
 	left:91px; 
-	top:84px; 
+	top:76px; 
 	width:367px; 
 	height:460px; 
 	z-index: 2;
@@ -58,8 +58,8 @@ p{
 
 .face{
 	position:relative;
-	left:90px;
-	top:76px;	
+	left:0px;
+	top:0px;	
 	z-index: 1;
 }
 
