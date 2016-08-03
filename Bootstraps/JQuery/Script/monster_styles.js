@@ -62,7 +62,7 @@ function golightning(){
 var w =367;
 var m =10;
 $("#btnRandom").click(randomize);
-$("#btnReset").click();
+$("#btnReset").click(reset);
 function getRandom(num){
     var my_random_num=Math.floor(Math.random()*num);
     return my_random_num;
@@ -79,10 +79,16 @@ function randomize(){
             var move_to=(current_position-target_position)*w;
             $(this).animate({left:"+="+move_to+"px"},500);
         }else{
-            
+
         }
     });
-};
+}
+function reset(){
+    $(".face").each(function(index){
+        clix[index]=0;
+        $(this).animate({left:"0px"},500);
+    });
+}
 });//end doc.onready function
 
 function lightning_one(){
