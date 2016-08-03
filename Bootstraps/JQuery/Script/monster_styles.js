@@ -5,58 +5,32 @@ var headclix = 0, eyeclix = 0, noseclix = 0, mouthclix = 0;
 		lightning_one();
 		lightning_two();
 		lightning_three();
-	
+	var clix=[0,0,0,0];
 	  $("#head").click(function(){		
-	  
-		if (headclix < 9){
-	$("#head").animate({left:"-=367px"},500);
-		headclix+=1;
-		}
-		else{
-			$("#head").animate({left:"0px"},500);
-			headclix = 0;
-		}
-	
+	    moveMe(0,this);
 	});
-	
 	
 	$("#eyes").click(function(){
-	
-		if (eyeclix < 9){
-		$("#eyes").animate({left:"-=367px"},500);
-			eyeclix+=1;
-		}
-		else{
-			$("#eyes").animate({left:"0px"},500);
-			eyeclix = 0;
-		}
+	    moveMe(1,this);
 	});
 	
-	
 	$("#nose").click(function(){
-		if (noseclix < 9){
-	$("#nose").animate({left:"-=367px"},500);
-		noseclix+=1;
-		}
-		else{
-			$("#nose").animate({left:"0px"},500);
-			noseclix = 0;
-		}
+        moveMe(2,this);
 	});//end click
 	
 	 $("#mouth").click(function(){
-	
-	if (mouthclix < 9){
-	$("#mouth").animate({left:"-=367px"},500);
-		mouthclix+=1;
-		}
-		else{
-			$("#mouth").animate({left:"0px"},500);
-			mouthclix = 0;
-		}
-	
+	   moveMe(3,this);
 	});
-	golightning();
+    function moveMe(i,obj){
+        if(clix[i]<9){
+            $(obj).animate({left:"-=367px"},500);
+            clix[i]=clix[i]+1;
+        }else{
+            clix[i]=0;
+            $(obj).animate({left:"0px"},500);
+        }
+    }
+golightning();
 window.onblur=stoplightning;
 window.onfocus=golightning;
 var int1,int2,int3;
