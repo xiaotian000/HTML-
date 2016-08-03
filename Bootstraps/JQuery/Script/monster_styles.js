@@ -59,8 +59,23 @@ function golightning(){
        lightning_three();
    },7000);
 };
-
-
+var w =367;
+var m =10;
+$("#btnRandom").click(randomize);
+$("#btnReset").click();
+function getRandom(num){
+    var my_random_num=Math.floor(Math.random()*num);
+    return my_random_num;
+}
+function randomize(){
+    $(".face").each(function(index){
+        var target_position=getRandom(m);
+        var current_position=clix[index];
+        clix[index]=target_position;
+        var move_to=target_position*w;
+        $(this).animate({left:"-="+move_to+"px"},500);
+    });
+};
 });//end doc.onready function
 
 function lightning_one(){
