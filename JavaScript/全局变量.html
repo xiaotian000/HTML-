@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="charset=utf-8">
+        <title>菜鸟教程</title>
+    </head>
+    <body>
+       <P>全局变量在任何脚本和函数内均可访问。</P>
+       <p id="demo"></p>
+       <script>
+           var carName = "Volvo";
+           myFunction();
+           function myFunction(){
+               document.getElementById("demo").innerHTML="我可以显示"+carName;
+           }
+       </script>
+    </body>
+</html>
