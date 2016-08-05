@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="charset=utf-8">
+        <title>菜鸟教程</title>
+    </head>
+    <body>
+        <p>基于时间生成的问候</p>
+        <button onclick="myFunction()">点击</button>
+        <p id="demo"></p>
+        <script>
+            function myFunction(){
+                var x=" ";
+                var time=new Date().getHours();
+                if(time<10){
+                    document.write("<b>早上好</b>");
+                }
+                else if(time>=10 && time<16)
+                {
+                    document.write("<b>今天好<b>");
+                }
+                else{
+                    document.write("<b>Hello World</b>");
+                }
+            }
+        </script>
+    </body>
+</html>
