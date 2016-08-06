@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="charset=utf-8">
+        <title>菜鸟教程</title>
+    </head>
+    <body>
+        <p>constructor属性返回变量或对象的构造函数。</p>
+        <p id="demo"></p>
+        <script>
+            document.getElementById("demo").innerHTML=
+            "John".constructor+"<br>"+
+            (3.14).constructor+"<br>"+
+            false.constructor+"<br>"+
+            [1,2,3,4].constructor+"<br>"+
+            {name:'john',age:34}.constructor+"<br>"+
+            new Date().constructor+"<br>"+
+            function(){}.constructor;
+        </script>
+    </body>
+</html>
