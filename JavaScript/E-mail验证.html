@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="charset=utf-8">
+        <title>菜鸟教程</title>
+        <script>
+            function validateForm(){
+                var x=document.forms["myForm"]["email"].value;
+                var atpos=x.indexOf("@");
+                var dotpos=x.lastIndexOf(".");
+                if(atpos<1||dotpos+2||dotpos+2>=x.length){
+                    alert("不是一个有效值e-mail地址");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myForm" action="demo-form.php" onsubmit="return validateForm();" method="POST">
+            Email:<input type="text" name="email">
+            <input type="submit" value="提交">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="charset=utf-8">
+        <title>菜鸟教程</title>
+    </head>
+    <body>
+        <p>替换“microsoft”为“W3cSchool”:</p>
+        <button onclick="myFunction()">点我</button>
+        <p id="demo">请访问Microsoft!</p>
+        <script>
+            function myFunction(){
+                var str=document.getElementById("demo").innerHTML;
+                var txt=str.replace(/microsoft/i,"W3cSchool");
+                document.getElementById("demo").innerHTML=txt;
+            }
+        </script>
+    </body>
+</html>

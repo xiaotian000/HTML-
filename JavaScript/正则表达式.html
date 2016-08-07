@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="charset=utf-8">
+        <title>菜鸟教程</title>
+    </head>
+    <body>
+        <p>搜索字符串“w3cSchool”，并显示匹配的起始位置:</p>
+        <button onclick="myFunction()">点我</button>
+        <p id="demo"></p>
+        <script>
+            function myFunction(){
+                var str="Visit W3cSchool!";
+                var n = str.search(/w3cSchool/i);
+                document.getElementById("demo").innerHTML=n;
+            }
+        </script>
+    </body>
+</html>
