@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="charset=utf-8">
+        <title>菜鸟教程</title>
+    </head>
+    <body>
+        <p>arguments.length属性返回函数接收到参数的个数：</p>
+        <p id="demo"></p>
+        <script>
+            function myFunction(a, b){
+                return arguments.length;
+            }
+            document.getElementById("demo").innerHTML=myFunction(4, 3);
+        </script>
+    </body>
+</html>

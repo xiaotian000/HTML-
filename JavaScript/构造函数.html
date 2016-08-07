@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="charset=utf-8">
+        <title>菜鸟教程</title>
+    </head>
+    <body>
+        <p>JavaScript内置构造函数</p>
+        <p id="demo"></p>
+        <script>
+            var myFunction=new Function("a", "b", "return a * b");
+            document.getElementById("demo").innerHTML=myFunction(3, 4);
+        </script>
+    </body>
+</html>
