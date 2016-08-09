@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="charset=utf-8">
+        <title>菜鸟教程</title>
+    </head>
+    <body>
+        <p>myObject.fullName()返回John Doe:</p>
+        <p id="demo"></p>
+        <script>
+            var myObject={
+                firstName:"John",
+                lastName:"Doe",
+                fullName:function(){
+                    return this.firstName + " " + this.lastName;
+                }
+            }
+            document.getElementById("demo").innerHTML = myObject.fullName();
+        </script>
+    </body>
+</html>
