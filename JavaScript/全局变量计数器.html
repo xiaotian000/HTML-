@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="charset=utf-8">
+        <title>菜鸟教程</title>
+    </head>
+    <body>
+        <p>全局变量计数。</p>
+        <button type="button" onclick="myFunction()">计数</button>
+        <p id="demo"></p>
+        <script>
+            var counter = 0;
+            function add(){
+                return counter += 1;
+            }
+            function myFunction(){
+                document.getElementById("demo").innerHTML = add();
+            }
+        </script>
+    </body>
+</html>

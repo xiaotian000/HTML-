@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="charset=utf-8">
+        <title>菜鸟教程</title>
+    </head>
+    <body>
+        <p>局部变量计数。</p>
+        <p id="demo"></p>
+        <script>
+            document.getElementById("demo").innerHTML = add();
+            function add(){
+                var counter = 0;
+                function plus(){
+                    counter += 1;
+                }
+                plus();
+                return counter;
+            }
+        </script>
+    </body>
+</html>
