@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="charset=utf-8">
+        <title>菜鸟教程</title>
+    </head>
+    <body>
+        <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+        style="background-color:red;width:120px;height:20px;padding:40px">Release me</div>
+        <script>
+            function mDown(obj){
+                obj.innerHTML="Thank You"
+            }
+            function mUp(obj){
+                obj.innerHTML="Release me"
+            }
+        </script>
+    </body>
+</html>
