@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="charset=utf-8">
+        <title>菜鸟教程</title>
+    </head>
+    <body>
+        <p id="demo">单价按钮将数组反转排序。</p>
+        <button onclick="myFunction()">点我</button>
+        <script>
+            var fruits = ["Banana","Orange","Apple","Mango"];
+            function myFunction(){
+                fruits.reverse();
+                var x=document.getElementById("demo");
+                x.innerHTML=fruits;
+            }
+        </script>
+    </body>
+</html>
