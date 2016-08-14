@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="charset=utf-8">
+        <title>菜鸟教程</title>
+        <style>
+            #div1{
+                border: 10px dotted black;
+                background-color: yellow;
+                padding: 35px;
+            }
+            #div2{
+                border: 10px dotted black;
+                padding: 35px;
+                background-color: yellow;
+                background-clip: content-box;
+            }
+            #div3{
+                border: 10px dotted black;
+                padding: 35px;
+                background-color: yellow;
+                background-clip: padding-box;
+            }
+        </style>
+    </head>
+    <body>
+        <p>没有背景裁剪（barder-box没有定义）:</p>
+        <div id="div1">
+            <h2>Lorem Ipsum Dolor</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
+                magna aliquam erat volutpat.
+            </p>
+        </div>
+        <p>background-clip:content-box:</p>
+        <div id="div2">
+            <h2>Lorem Ipsum Dolor</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
+                magna aliquam erat volutpat.
+            </p>
+        </div>
+        <p>background-clip:padding-box:</p>
+        <div id="div3">
+           <h2>Lorem Ipsum Dolor</h2>
+           <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
+                magna aliquam erat volutpat.
+           </p>
+        </div>
+    </body>
+</html>
