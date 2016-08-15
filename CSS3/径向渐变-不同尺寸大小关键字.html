@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="charset=utf-8">
+        <title>菜鸟教程</title>
+        <style>
+            #grad1{
+                height: 200px;
+                width: 200px;
+                background: -webkit-radial-gradient(60% 55%,closest-side,pink,yellow,deepskyblue);
+                background: -o-radial-gradient(60% 55%,closest-side,pink,yellow,deepskyblue);
+                background: -moz-radial-gradient(60% 55%,closest-side,pink,yellow,deepskyblue);
+                background: radial-gradient(60% 55%,closest-side,pink,yellow,deepskyblue);
+            }
+            #grad2{
+                height: 200px;
+                width: 200px;
+                background: -webkit-radial-gradient(60% 55%,farthest-side,pink,yellow,deepskyblue);
+                background: -o-radial-gradient(60% 55%,farthest-side,pink,yellow,deepskyblue);
+                background: -moz-radial-gradient(60% 55%,farthest-side,pink,yellow,deepskyblue);
+                background: radial-gradient(60% 55%,farthest-side,pink,yellow,deepskyblue);
+            }
+            #grad3{
+                height: 200px;
+                width: 200px;
+                background: -webkit-radial-gradient(60% 55%,closest-corner,pink,yellow,deepskyblue);
+                background: -o-radial-gradient(60% 55%,closest-corner,pink,yellow,deepskyblue);
+                background: -moz-radial-gradient(60% 55%,closest-corner,pink,yellow,deepskyblue);
+                background: radial-gradient(60% 55%,closest-corner,pink,yellow,deepskyblue);
+            }
+            #grad4{
+                height: 200px;
+                width: 200px;
+                background: -webkit-radial-gradient(60% 55%,farthest-corner,pink,yellow,deepskyblue);
+                background: -o-radial-gradient(60% 55%,farthest-corner,pink,yellow,deepskyblue);
+                background: -moz-radial-gradient(60% 55%,farthest-corner,pink,yellow,deepskyblue);
+                background: radial-gradient(60% 55%,farthest-corner,pink,yellow,deepskyblue);
+            }
+        </style>
+    </head>
+    <body>
+        <h3>径向渐变-不同尺寸大小关键字的使用</h3>
+        <p><strong>closest-side:</strong></p>
+        <div id="grad1"></div>
+        <p><strong>farthest-side:</strong></p>
+        <div id="grad2"></div>
+        <p><strong>closest-corner:</strong></p>
+        <div id="grad3"></div>
+        <p><strong>farthest-corner:</strong></p>
+        <div id="grad4"></div>
+    </body>
+</html>
