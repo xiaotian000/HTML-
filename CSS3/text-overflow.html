@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="charset=utf-8">
+        <title>菜鸟教程</title>
+        <style>
+            .test{
+                white-space:nowrap;
+                width:12em;
+                overflow:hidden;
+                border:1px solid #000000;
+            }
+        </style>
+    </head>
+    <body>
+        <p>以下div容器内的文本无法完全显示，可以看到它们被裁剪了。</p>
+        <p>div使用<q>text-overflow:ellipsis</q>:</p>
+        <div class="test" style="text-overflow:ellipsis;">
+            his is some long text that will not fit in the box
+        </div>
+        <p>div使用<q>text-overflow:clip</q>:</p>
+        <div class="test" style="text-overflow:clip;">
+            his is some long text that will not fit in the box
+        </div>
+        <p>div使用自定义字符串<q>text-overflow:&qt;</q></p>
+        <div class="test" style="text-overflow:'>>';">
+            his is some long text that will not fit in the box
+        </div>
+    </body>
+</html>
