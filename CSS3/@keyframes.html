@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="charset=utf-8">
+        <title>菜鸟教程</title>
+    </head>
+    <style>
+        div{
+            width:100px;
+            height:100px;
+            background:red;
+            animation:myfirst 5s;
+            -moz-animation:myfirst 5s;
+            -webkit-animation:myfirst 5s;
+            -o-animation:myfirst 5s;
+        }
+        @keyframes myfirst{
+            0% {background:red;}
+            25% {background:yellow;}
+            50% {background:blue;}
+            100%{background:green;}
+        }
+        @-moz-keyframes myfirst{
+            0% {background:red;}
+            25% {background:yellow;}
+            50% {background:blue;}
+            100% {background:green;}
+        }
+        @-webkit-keyframes myfirst{
+            0% {background:red;}
+            25% {background:yellow;}
+            50% {background:blue;}
+            100% {background:green;}
+        }
+        @-o-keyframes myfirst{
+            0% {background:red;}
+            25% {background:yellow;}
+            50% {background:blue;}
+            100% {background:green;}
+        }
+
+    </style>
+    <body>
+        <div></div>
+    </body>
+</html>
