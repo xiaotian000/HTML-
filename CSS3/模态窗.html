@@ -47,13 +47,13 @@
                 animation-name:zoom;
                 animation-duration:0.6s;
             }
-            @-webkit-keyframes zoom{
+            @-webkit-keyframes zoom {
                 from {-webkit-transform:scale(0)}
-                to{-webkit-transform:scale(1)}
+                to {-webkit-transform:scale(1)}
             }
             @keyframes zoom{
-                from{transform:scale(0.1)}
-                to{transform:scale(1)}
+                from {transform:scale(0.1)}
+                to {transform:scale(1)}
             }
             .close{
                 position:absolute;
@@ -70,7 +70,7 @@
                 text-decoration:none;
                 cursor:pointer;
             }
-            @modia only screen and(max-width:700px){
+            @media only screen and(max-width:700px){
                 .modal-content{
                     width:100%;
                 }
@@ -89,7 +89,7 @@
         <img id="myImg" src="http://www.runoob.com/wp-content/uploads/2016/04/img_lights.jpg"
         alt="Northern Lights,Norway" width="300" height="200">
 
-        <div id="myModel" class="modal">
+        <div id="myModal" class="modal">
             <span class="close">×</span>
             <img class="modal-content" id="img01">
             <div id="caption"></div>
