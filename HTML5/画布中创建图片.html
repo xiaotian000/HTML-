@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="charset=utf-8">
+        <title>菜鸟教程</title>
+    </head>
+    <body>
+        <p>Image to use:</p>
+        <img id="colorfulday" src="images/colorfulday.jpeg" alt="colorfulday" width="300" height="451">
+        <p>Canvas:</p>
+        <canvas id="myCanvas" width="350" height="500" style="border:1px solid #3d3d3d"></canvas>
+
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            var img = document.getElementById("colorfulday");
+
+            img.onload = function(){
+                ctx.drawImage(img,20,20);
+            }
+        </script>
+    </body>
+</html>
