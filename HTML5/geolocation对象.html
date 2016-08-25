@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="charset=utf-8">
+        <title>菜鸟教程</title>
+    </head>
+    <body>
+        <p id="demo">点击按钮获取您当前的坐标（可能需要比较长的时间获取）：</p>
+        <button onclick="getLocation()">点我</button>
+        <script>
+            var x = document.getElementById("demo");
+            function getLocation()
+            {
+                if(navigator.geolocation)
+                {
+                    navigator.geolocation.watchPosition(showPosition);
+                }
+                else
+                {
+                    x.innerHTML="该浏览器不支持获取地理位置。"
+                }
+            }
+            function showPosition(position)
+            {
+                x.innerhTML="纬度"+position.coords.latitude+
+                "<br>经度："+position.coords.longitude;
+            }
+        </script>
+    </body>
+</html>
