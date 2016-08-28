@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="charset=utf-8">
+        <title>菜鸟教程</title>
+    </head>
+    <body>
+        <form action="demo-form.php" id="form1">
+            First name:<input type="text" name="fname"><br>
+            <input type="submit" value="提交">
+        </form>
+        <p>"Last name"字段没有在form表单之内，但它也是form表单的一部分。</p>
+        Last name:<input type="text" name="lname" form="form1">
+        <p><b>注意：</b>IE不支持form属性</p>
+    </body>
+</html>
