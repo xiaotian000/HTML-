@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="charset=utf-8">
+        <title>Bootstrap实例-带有下拉菜单的标签页</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <script src="http://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <p>带有下拉表单的标签页</p>
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">SVN</a></li>
+            <li><a href="#">iOS</a></li>
+            <li><a href="#">VB.Net</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    Java<span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Swing</a></li>
+                    <li><a href="#">jMeter</a></li>
+                    <li><a href="#">EJB</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">分离的链接</a></li>
+                </ul>
+            </li>
+            <li><a href="#">PHP</a></li>
+        </ul>
+    </body>
+</html>
